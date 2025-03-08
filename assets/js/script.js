@@ -2,76 +2,85 @@
 
     "use strict";
 
+
+
+
     /*------------------------------------------
         Nice Select
     -------------------------------------------*/
 
     $('.select').niceSelect();
 
+   // Function to handle the active class on navigation items
+   function handleActiveClass() {
+    // Select all navigation links inside the navbar
+    var navLinks = $("#navbar .navbar-nav li a");
 
-    /*------------------------------------------
-        = ALL ESSENTIAL FUNCTIONS
-    -------------------------------------------*/
+    // Add click event to each navigation link
+    navLinks.on("click", function () {
+        // Remove the active class from all navigation items
+        navLinks.removeClass("active");
 
+        // Add the active class to the clicked navigation item
+        $(this).addClass("active");
+    });
 
-    // Toggle mobile navigation
-    function toggleMobileNavigation() {
-        var navbar = $(".navigation-holder");
-        var openBtn = $(".mobail-menu .open-btn");
-        var xbutton = $(".mobail-menu .navbar-toggler");
+    // Set active class based on the current URL on page load
+    var currentUrl = window.location.href;
+    navLinks.each(function () {
+        if (this.href === currentUrl) {
+            $(this).addClass("active");
+        }
+        if(this.href !== currentUrl) {
+            $(this).removeClass("active");
+        }
+    });
+}
 
-        openBtn.on("click", function (e) {
+// Call the function to handle the active class
+handleActiveClass();
+
+// Function for toggle class for small menu
+function toggleClassForSmallNav() {
+    var windowWidth = window.innerWidth;
+    var mainNav = $("#navbar > ul");
+
+    if (windowWidth <= 991) {
+        mainNav.addClass("small-nav");
+    } else {
+        mainNav.removeClass("small-nav");
+    }
+}
+
+toggleClassForSmallNav();
+
+// Function for small menu
+function smallNavFunctionality() {
+    var windowWidth = window.innerWidth;
+    var mainNav = $(".navigation-holder");
+    var smallNav = $(".navigation-holder > .small-nav");
+    var subMenu = smallNav.find(".sub-menu");
+    var megamenu = smallNav.find(".mega-menu");
+    var menuItemWidthSubMenu = smallNav.find(".menu-item-has-children > a");
+
+    if (windowWidth <= 991) {
+        subMenu.hide();
+        megamenu.hide();
+        menuItemWidthSubMenu.on("click", function (e) {
+            var $this = $(this);
+            $this.siblings().slideToggle();
+            e.preventDefault();
             e.stopImmediatePropagation();
-            navbar.toggleClass("slideInn");
-            xbutton.toggleClass("x-close");
-            return false;
-        })
+            $this.toggleClass("rotate");
+        });
+    } else if (windowWidth > 991) {
+        mainNav.find(".sub-menu").show();
+        mainNav.find(".mega-menu").show();
     }
+}
 
-    toggleMobileNavigation();
-
-
-    // Function for toggle class for small menu
-    function toggleClassForSmallNav() {
-        var windowWidth = window.innerWidth;
-        var mainNav = $("#navbar > ul");
-
-        if (windowWidth <= 991) {
-            mainNav.addClass("small-nav");
-        } else {
-            mainNav.removeClass("small-nav");
-        }
-    }
-
-    toggleClassForSmallNav();
-
-
-    // Function for small menu
-    function smallNavFunctionality() {
-        var windowWidth = window.innerWidth;
-        var mainNav = $(".navigation-holder");
-        var smallNav = $(".navigation-holder > .small-nav");
-        var subMenu = smallNav.find(".sub-menu");
-        var megamenu = smallNav.find(".mega-menu");
-        var menuItemWidthSubMenu = smallNav.find(".menu-item-has-children > a");
-
-        if (windowWidth <= 991) {
-            subMenu.hide();
-            megamenu.hide();
-            menuItemWidthSubMenu.on("click", function (e) {
-                var $this = $(this);
-                $this.siblings().slideToggle();
-                e.preventDefault();
-                e.stopImmediatePropagation();
-                $this.toggleClass("rotate");
-            })
-        } else if (windowWidth > 991) {
-            mainNav.find(".sub-menu").show();
-            mainNav.find(".mega-menu").show();
-        }
-    }
-
-    smallNavFunctionality();
+smallNavFunctionality();
+   
 
     $("body").on("click", function () {
         $('.navigation-holder').removeClass('slideInn');
@@ -967,3 +976,7 @@
     
 
 })(window.jQuery);
+
+
+
+

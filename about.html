@@ -22,6 +22,8 @@
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/sass/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
 </head>
 
 <body>
@@ -46,95 +48,30 @@
         <header id="header">
             <div class="wpo-site-header">
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3 col-md-4 col-3 d-lg-none dl-block">
-                                <div class="mobail-menu">
-                                    <button type="button" class="navbar-toggler open-btn">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar first-angle"></span>
-                                        <span class="icon-bar middle-angle"></span>
-                                        <span class="icon-bar last-angle"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-6">
-                                <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg"
-                                            alt="logo"></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-1 col-1">
-                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
-                                    <button class="menu-close"><i class="ti-close"></i></button>
-                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home Style 1</a></li>
-                                                <li><a href="index-2.html">Home Style 2</a></li>
-                                                <li><a href="index-3.html">Home Style 3</a></li>
-                                                <li><a href="index-4.html">Home Style 4</a></li>
-                                                <li><a href="index-5.html">Home Style 5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="active" href="about.html">About</a></li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Courses</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="course.html">Courses Style 1</a></li>
-                                                <li><a href="course-2.html">Courses Style 2</a></li>
-                                                <li><a href="course-3.html">Courses Style 3</a></li>
-                                                <li><a href="course-single.html">Courses single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                                 
-                                                 <li><a href="testimonial.html">Testimonial</a></li>
-                                                 
-                                                <li><a href="teacher-single.html">Teacher Single</a></li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Services</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="course.html">Courses</a></li>
-                                                        <li><a href="course-single.html">Services Single</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                 
-
-                                            </ul>
-                                        </li>
-                                         
-                                        
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-2">
-                                <div class="header-right">
-                                    <div class="header-search-form-wrapper">
-                                        <div class="cart-search-contact">
-                                            <button class="search-toggle-btn"><i
-                                                    class="fi flaticon-search"></i></button>
-                                            <div class="header-search-form">
-                                                <form>
-                                                    <div>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Search here...">
-                                                        <button type="submit"><i
-                                                                class="fi flaticon-search"></i></button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     
-                                </div>
-                            </div>
-                        </div>
+                    <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li>
+                                <a class="active" href="index.html">Home</a>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                    <li><a href="teacher-single.html">Teacher Single</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="fee-structure.html">Fee Structure</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="us-international-fee-structure.html">For US & International</a></li>
+                                            <li><a href="uk-fee-structure.html">For United Kingdom</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -168,22 +105,23 @@
             <div class="container">
                 <div class="wpo-about-wrap">
                     <div class="row align-items-center">
+                        <!-- About Us Image Section -->
                         <div class="col-lg-6 col-md-12 col-12">
                             <div class="wpo-about-img-wrap">
                                 <div class="wpo-about-img-left">
                                     <div class="wpo-about-img">
-                                        <img src="assets/images/about/img-1.jpg" alt="">
+                                        <img src="assets/images/about/img-1.jpg" alt="About Us">
                                     </div>
                                 </div>
                                 <div class="wpo-about-img-right">
                                     <div class="wpo-about-img-inner">
-                                        <img src="assets/images/about/img-2.jpg" alt="">
+                                        <img src="assets/images/about/img-2.jpg" alt="Tutoring">
                                     </div>
                                     <div class="exprience-wrap">
                                         <div class="exprience">
                                             <div class="icon"><i class="fi flaticon-award"></i></div>
                                             <div class="content">
-                                                <h3>25+</h3>
+                                                <h3>5+</h3>
                                                 <p>Years Of Experience</p>
                                             </div>
                                         </div>
@@ -191,74 +129,84 @@
                                 </div>
                             </div>
                         </div>
+        
+                        <!-- About Us Text Section -->
                         <div class="col-lg-6 col-md-12 col-12">
                             <div class="wpo-about-text">
                                 <div class="wpo-section-title">
-                                    <small>About Eduko</small>
-                                    <h2>A New Different Way To Improve Your
-                                        <span>
-                                            Skills.
-                                            <i class="shape">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 53"
-                                                    fill="none">
-                                                    <path
-                                                        d="M152.182 2.58319C107.878 0.889793 54.8748 6.13932 21.2281 18.6943C14.2699 21.4407 7.93951 24.7738 5.70192 28.7128C4.27488 31.2398 5.03121 33.954 7.69121 36.2925C14.8835 42.3911 31.9822 45.4011 46.8006 47.3115C78.3067 51.0179 113.672 51.7406 145.489 48.3204C167.194 46.0009 200.667 39.5923 199.399 28.5709C198.543 20.0621 180.437 14.5729 162.979 11.6178C138.219 7.469 111.131 6.00576 84.5743 5.86862C71.32 5.85789 58.0913 6.85723 45.6675 8.78436C33.512 10.7186 21.2709 13.4317 12.6602 17.5817C11.2246 18.2877 8.62449 17.4553 9.9973 16.6813C20.7486 11.2493 38.0215 7.73493 53.9558 5.76368C77.1194 2.90994 101.75 3.75426 125.339 5.14356C158.167 7.2615 207.554 13.5139 204.928 30.7413C203.629 36.0898 194.762 40.5057 184.681 43.5503C156.563 51.768 119.114 53.6844 85.6331 52.5265C65.1694 51.7477 44.4831 50.1855 25.9972 46.2442C11.4129 43.1186 -1.0337 37.8297 0.0679738 30.5063C2.14003 19.9035 31.4913 12.0006 52.6201 7.98775C71.2971 4.45904 91.3384 2.2302 111.674 1.24636C125.228 0.595237 138.962 0.539188 152.536 1.15931C153.475 1.20224 154.154 1.55523 154.051 1.94876C153.951 2.33872 153.115 2.62135 152.182 2.58319Z" />
-                                                </svg>
-                                            </i>
-                                        </span>
-                                    </h2>
+                                    <small>About Us</small>
+                                    <h2>Empowering Students Through <span>Personalized Learning</span></h2>
                                 </div>
-                                <p>Education is one of the most essential and valuable assets that an individual can
-                                    possess. It plays a pivotal role in shaping the future of individuals, societies,
-                                    and nations. The importance of education cannot be overstated, individuals
-                                    development of nations.</p>
-                                <p>One of the primary benefits of education is its ability to empower individuals.
-                                    Through education, individuals acquire knowledge, skills, and enable them to
-                                    navigate the complexities of life.</p>
+                                <p>What started as a small initiative has evolved into a leading global tutoring platform. Over the past five years, we have worked with students across the <strong>UK, USA, Australia, and beyond</strong>, providing tailored academic support.</p>
+        
+                                <p>We believe that <strong>every student is unique</strong>, which is why we offer <strong>personalized lesson plans</strong>, expert mentorship, and interactive learning experiences. Our team of <strong>highly skilled tutors</strong> specializes in subjects ranging from Mathematics and Science to Test Preparation (SAT, ACT, GCSE, A-Level, IB, NAPLAN), and more.</p>
+        
                                 <div class="wpo-about-features-wrap">
                                     <div class="wpo-about-features-item">
                                         <div class="wpo-about-features-icon">
-                                            <div class="icon">
-                                                <i class="fi flaticon-training-1"></i>
-                                            </div>
+                                            <div class="icon"><i class="fi flaticon-training-1"></i></div>
                                         </div>
                                         <div class="wpo-about-features-text">
-                                            <h5>1250+ Courses</h5>
+                                            <h5>20+ Subjects Covered</h5>
                                         </div>
                                     </div>
                                     <div class="wpo-about-features-item">
                                         <div class="wpo-about-features-icon">
-                                            <div class="icon">
-                                                <i class="fi flaticon-video-lesson"></i>
-                                            </div>
+                                            <div class="icon"><i class="fi flaticon-video-lesson"></i></div>
                                         </div>
                                         <div class="wpo-about-features-text">
-                                            <h5>500+ Free Class</h5>
+                                            <h5>300+ Free Trial Classes</h5>
                                         </div>
                                     </div>
                                     <div class="wpo-about-features-item">
                                         <div class="wpo-about-features-icon">
-                                            <div class="icon">
-                                                <i class="fi flaticon-team"></i>
-                                            </div>
+                                            <div class="icon"><i class="fi flaticon-team"></i></div>
                                         </div>
                                         <div class="wpo-about-features-text">
-                                            <h5>25k Students</h5>
-                                        </div>
-                                    </div>
-                                    <div class="wpo-about-features-item">
-                                        <div class="wpo-about-features-icon">
-                                            <div class="icon">
-                                                <i class="fi flaticon-training"></i>
-                                            </div>
-                                        </div>
-                                        <div class="wpo-about-features-text">
-                                            <h5>250+ Mentors</h5>
+                                            <h5>25k Students Tutored</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="about.html" class="theme-btn-s2">Learn More About Us</a>
                             </div>
+                        </div>
+                    </div>
+        
+                    <!-- Why We Stand Out Section -->
+                    <div class="row about-details">
+                        <div class="col-12">
+                            <h3 class="section-title">Why We Stand Out</h3>
+                            <ul class="about-list">
+                                <li><img src="assets/icons/globe.png" class="icon-small" alt=""> <strong>Global Reach, Local Impact:</strong> We support students worldwide, tailoring lessons to their school curricula.</li>
+                                <li><img src="assets/icons/exam.png" class="icon-small" alt=""> <strong>Expert Tutors, Personalized Learning:</strong> Our educators adapt their teaching methods to each student's learning style.</li>
+                                <li><img src="assets/icons/calendar.png" class="icon-small" alt=""> <strong>Flexible & Convenient:</strong> Learn from the comfort of your home with easy-to-schedule online lessons.</li>
+                                <li><img src="assets/icons/discount.png" class="icon-small" alt=""> <strong>Affordable & High-Quality:</strong> We bridge the gap between private tutoring and accessible education.</li>
+                                <li><img src="assets/icons/thinking.png" class="icon-small" alt=""> <strong>Lifelong Learning Approach:</strong> We instill critical thinking, intellectual curiosity, and a love for learning.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Our Vision Section -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="section-title">Our Vision: Shaping the Future of Learning</h3>
+                            <p>We envision a world where <strong>every student</strong>, regardless of background, has access to <strong>high-quality, personalized education</strong>. Our goal is to create a learning environment that is <strong>engaging, flexible, and empowering</strong>, ensuring students achieve academic excellence while developing essential life skills.</p>
+                            <p>Through our innovative online tutoring platform, we make learning a <strong>rewarding and confidence-building journey</strong>, helping students <strong>understand concepts deeply</strong> rather than just memorizing facts.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Our Mission Section -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="section-title">Our Mission: Personalized, Affordable, and Effective Tutoring</h3>
+                            <p>We strive to make <strong>one-on-one tutoring accessible</strong> to every student by providing <strong>affordable, flexible, and high-quality education</strong>. Our mission focuses on:</p>
+                            <ul class="about-list">
+                                <li><img src="assets/icons/plan.png" class="icon-small" alt=""> <strong>Personalized Learning Plans:</strong> Customized roadmaps tailored to academic strengths and weaknesses.</li>
+                                <li><img src="assets/icons/clock.png" class="icon-small" alt=""> <strong>Flexible Scheduling:</strong> Learn at your own pace with adaptable lesson timings.</li>
+                                <li><img src="assets/icons/education.png" class="icon-small" alt=""> <strong>Interactive, Engaging Lessons:</strong> Innovative teaching methods to make learning enjoyable.</li>
+                                <li><img src="assets/icons/goal.png" class="icon-small" alt=""> <strong>Academic & Personal Growth:</strong> Beyond grades, we nurture critical thinking, problem-solving, and a lifelong love for learning.</li>
+                            </ul>
+                            <p>Education should be a right, not a privilege. With our commitment to affordable excellence, we are transforming how students learn—one lesson at a time.</p>
+                            <p><strong>Join us on this journey of learning, growth, and success! 🚀</strong></p>
                         </div>
                     </div>
                 </div>
