@@ -154,21 +154,18 @@
                                 content of a page when looking.</p>
                         </div>
                         <div class="wpo-contact-form-area">
-                            <form method="post" class="contact-validation-active" id="contact-form-main">
+                            <form class="contact-validation-active" id="contact-form-main">
                                 <div>
-                                    <input type="text" class="form-control" name="name" id="name"
-                                        placeholder="Your Name*">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*">
                                 </div>
                                 <div>
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email*">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*">
                                 </div>
                                 <div>
-                                    <input type="text" class="form-control" name="phone" id="phone"
-                                        placeholder="Your Phone*">
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone*">
                                 </div>
                                 <div>
-                                    <select name="service" class="form-control">
+                                    <select name="service" class="form-control" id="service">
                                         <option disabled="disabled" selected>Subject</option>
                                         <option>Web Development</option>
                                         <option>Web Design</option>
@@ -176,11 +173,10 @@
                                     </select>
                                 </div>
                                 <div class="fullwidth">
-                                    <textarea class="form-control" name="note" id="note"
-                                        placeholder="Message..."></textarea>
+                                    <textarea class="form-control" name="note" id="note" placeholder="Message..."></textarea>
                                 </div>
                                 <div class="submit-area">
-                                    <button type="submit" class="theme-btn">Get in Touch</button>
+                                    <button type="submit" class="theme-btn">Send Message</button>
                                     <div id="loader">
                                         <i class="ti-reload"></i>
                                     </div>
@@ -331,6 +327,19 @@
     <script src="assets/js/jquery-plugin-collection.js"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "aJBtFFAqzYzpfp3Wu",
+            });
+        })();
+        </script>
+        <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
